@@ -2,7 +2,7 @@
 
 This repository contains a sample implementation of a SignalWire SDK Server. This is the server that you need to securely communicate with SignalWire and to implement your custom authentication logic. This server typically fits between a web browser client and SignalWire infrastructure as illustrated in the picture below:
 
-![Client and servers](.resources/clientserver.png)
+<img src=".resources/clientserver.png" alt="Client and servers" width=500 />
 
 ## Configuration
 
