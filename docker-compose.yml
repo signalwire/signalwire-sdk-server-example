@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+ server:
+  build: .
+  volumes:
+   - ./src:/app/src
+  ports:
+   - 5000:5000
+  environment:
+   - SIGNALWIRE_PROJECT_ID=  # your-project-id
+   - SIGNALWIRE_API_TOKEN=  # PT...
+   - SIGNALWIRE_SPACE_URL=  # <yourspace>.signalwire.com
+   - MOD_PASSWORD=mysecretpassword
