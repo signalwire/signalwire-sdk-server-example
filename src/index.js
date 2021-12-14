@@ -75,7 +75,7 @@ app.post("/get_token", async (req, res) => {
       },
       { auth }
     );
- 
+
     const token = response.data?.token;
     console.log(
       "Token:",
