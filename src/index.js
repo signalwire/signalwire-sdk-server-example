@@ -82,7 +82,10 @@ app.post("/get_token", async (req, res) => {
       token.length < 7 ? token : token.substring(0, 6) + "..."
     );
 
-    return res.json({ token });
+    return res.json({
+      token: token,
+      permissions: tokenPermissions
+    });
   } catch (e) {
     console.log(e);
     return res.sendStatus(500);
